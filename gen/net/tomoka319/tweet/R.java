@@ -32,7 +32,12 @@ public final class R {
         public static final int icon=0x7f080006;
         public static final int input_text=0x7f080002;
         public static final int menu_reload=0x7f08000a;
+        public static final int menu_reload1=0x7f08000c;
+        public static final int menu_timeline=0x7f08000f;
+        public static final int menu_timeline1=0x7f080010;
         public static final int menu_tweet=0x7f08000b;
+        public static final int menu_tweet1=0x7f08000d;
+        public static final int menu_web=0x7f08000e;
         public static final int name=0x7f080007;
         public static final int progressBar2=0x7f080004;
         public static final int screen_name=0x7f080008;
@@ -48,13 +53,16 @@ public final class R {
     }
     public static final class menu {
         public static final int main=0x7f070000;
+        public static final int tweet=0x7f070001;
+        public static final int web=0x7f070002;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int hello_world=0x7f050002;
         public static final int menu_refresh=0x7f050009;
+        public static final int menu_timeline=0x7f05000a;
         public static final int menu_tweet=0x7f050008;
+        public static final int menu_web=0x7f050001;
         public static final int tweet=0x7f050007;
         public static final int twitter_callback_url=0x7f050006;
         public static final int twitter_consumer_key=0x7f050003;

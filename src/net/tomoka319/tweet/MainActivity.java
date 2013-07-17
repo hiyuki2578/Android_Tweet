@@ -13,7 +13,6 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,9 +46,9 @@ public class MainActivity extends ListActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main, menu);
-        return super.onCreateOptionsMenu(menu);
+      // Inflate the menu; this adds items to the action bar if it is present.
+      getMenuInflater().inflate(R.menu.main, menu);
+      return true;
     }
 
     @Override
@@ -58,10 +57,21 @@ public class MainActivity extends ListActivity {
             case R.id.menu_reload:
                 reloadTimeLine();
                 return true;
+            case R.id.menu_web:
+            	Intent intent = new Intent (this, webActivity.class);
+            	startActivity(intent);
+            	return true;
             case R.id.menu_tweet:
-                Intent intent = new Intent(this, TweetActivity.class);
-                startActivity(intent);
+                Intent intent1 = new Intent(this, TweetActivity.class);
+                startActivity(intent1);
                 return true;
+            case R.id.menu_reload1:
+            	reloadTimeLine();
+            	return true;
+            case R.id.menu_tweet1:
+            	Intent intent2 = new Intent(this, TweetActivity.class);
+            	startActivity(intent2);
+            	return true;
         }
         return super.onOptionsItemSelected(item);
     }

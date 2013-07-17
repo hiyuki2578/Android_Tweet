@@ -3,9 +3,12 @@ package net.tomoka319.tweet;
 import net.tomoka319.tweet.util.TwitterUtils;
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -15,6 +18,26 @@ public class TweetActivity extends FragmentActivity {
     private EditText mInputText;
     private Twitter mTwitter;
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+    	// Inflate the menu; this adds items to the action bar if it is present.
+    	getMenuInflater().inflate(R.menu.tweet, menu);
+    	return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_timeline:
+                Intent intent = new Intent (this, MainActivity.class);
+                startActivity(intent);
+                return true;
+            case R.id.menu_web:
+            	Intent intent1 = new Intent(this, webActivity.class);
+            	startActivity(intent1);
+            	return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
