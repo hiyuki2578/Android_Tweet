@@ -12,5 +12,13 @@
     <string name="menu_tweet">つぶやく</string>
     <string name="menu_refresh">更新</string>
     <string name="menu_timeline">TLを開く</string>
+    <string name="menu_mail">開発者にメール</string>
+    <string name="unknown">取得できませんでした</string>
+    <string name="gps">GPS情報の表示</string>
+    <string name="wifi">wifiスキャン</string>
+    <string name="on_label">無線LANをOFFにする</string>
+    <string name="off_label">無線LANをONにする</string>
+    <string name="wifi_on_off">無線LANトグル</string>
+    <string name="speed">Speedtest.net</string>
     
 </resources>

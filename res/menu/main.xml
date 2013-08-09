@@ -25,5 +25,31 @@
         android:orderInCategory="103"
         android:showAsAction="never"
         android:title="@string/menu_web"/>
+    <item 
+        android:id="@+id/menu_mail"
+        android:orderInCategory="105"
+        android:showAsAction="never"
+        android:title="@string/menu_mail"/>
+    <item
+        android:id="@+id/menu_gps"
+        android:orderInCategory="106"
+        android:showAsAction="never"
+        android:title="@string/gps"/>
+    <item
+        android:id="@+id/menu_wifi"
+        android:orderInCategory="107"
+        android:showAsAction="never"
+        android:title="@string/wifi"/>
+    <item
+        android:id="@+id/menu_wifi_setting"
+        android:orderInCategory="108"
+        android:showAsAction="never"
+        android:title="@string/wifi_on_off">
+    <item
+        android:id="@+id/menu_speed"
+        android:orderInCategory="109"
+        android:showAsAction="never"
+        android:title="@string/speed"></item>
+    </item>
     
 </menu>

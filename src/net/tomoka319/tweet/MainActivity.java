@@ -9,6 +9,8 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -72,6 +74,30 @@ public class MainActivity extends ListActivity {
             	Intent intent2 = new Intent(this, TweetActivity.class);
             	startActivity(intent2);
             	return true;
+            case R.id.menu_mail:
+            	Uri uri = Uri.parse ("mailto:admin@tomoka319.net");  
+            	Intent intent3 = new Intent(Intent.ACTION_SENDTO, uri);   
+            	intent3.putExtra(Intent.EXTRA_SUBJECT, "見ろ!!人がゴミのようだ!!");  
+            	intent3.putExtra(Intent.EXTRA_TEXT, "バルス！");  
+            	startActivity(intent3);
+            	return true;
+            case R.id.menu_gps:
+            	Intent intent4 = new Intent(this, GPSActivity.class);
+            	startActivity(intent4);
+            	return true;
+            case R.id.menu_wifi:
+            	Intent intent5 = new Intent(this, WifiScanActivity.class);
+            	startActivity(intent5);
+            	return true;
+            case R.id.menu_wifi_setting:
+            	Intent intent6 = new Intent(this, WifiActivity.class);
+            	startActivity(intent6);
+            	return true;
+            case R.id.menu_speed:
+            	PackageManager pm = getPackageManager();
+            	Intent intent7 = pm.getLaunchIntentForPackage("org.zwanoo.android.speedtest");
+            	startActivity(intent7);
+            	return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -93,8 +119,8 @@ public class MainActivity extends ListActivity {
             Status item = getItem(position);
             TextView name = (TextView) convertView.findViewById(R.id.name);
             name.setText(item.getUser().getName());
-            //TextView screenName = (TextView) convertView.findViewById(R.id.screen_name);
-            //screenName.setText("@" + item.getUser().getScreenName());
+            TextView screenName = (TextView) convertView.findViewById(R.id.screen_name);
+            screenName.setText("@" + item.getUser().getScreenName());
             TextView text = (TextView) convertView.findViewById(R.id.text);
             text.setText(item.getText());
             SmartImageView icon = (SmartImageView) convertView.findViewById(R.id.icon);
