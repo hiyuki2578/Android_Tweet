@@ -65,7 +65,8 @@ public class webActivity extends Activity {
 		//ズーム
 		myWebView.getSettings().setBuiltInZoomControls(true);
 		//ホームページ
-		myWebView.loadUrl("http://www.google.com");}
+		myWebView.loadUrl("http://www.google.com");
+	}
 	@Override
 	public boolean onKeyDown( int keyCode, KeyEvent event ) {
 		WebView webview = (WebView)findViewById(R.id.webView1);
