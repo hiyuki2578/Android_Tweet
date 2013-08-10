@@ -49,8 +49,8 @@ public class webActivity extends Activity {
 		setContentView(R.layout.activity_web);
 		//レイアウトで指定したWebViewのIDを指定する。
 		WebView  myWebView = (WebView)findViewById(R.id.webView1);		
-        //SNSのセッションを保つのに必要だったりします。
-        myWebView.getSettings().setDomStorageEnabled(true);
+        	//SNSのセッションを保つのに必要だったりします。
+	        myWebView.getSettings().setDomStorageEnabled(true);
 		//リンクをタップしたときに標準ブラウザを起動させない
 		myWebView.setWebViewClient(new WebViewClient());
 		//JavaScriptを有効化
@@ -60,8 +60,8 @@ public class webActivity extends Activity {
 		//Flash
 		myWebView.getSettings().setPluginsEnabled( true );
 		//サイズ合わせ
-        myWebView.getSettings().setLoadWithOverviewMode(true);
-        myWebView.getSettings().setUseWideViewPort(true);
+        	myWebView.getSettings().setLoadWithOverviewMode(true);
+        	myWebView.getSettings().setUseWideViewPort(true);
 		//ズーム
 		myWebView.getSettings().setBuiltInZoomControls(true);
 		//ホームページ
@@ -69,10 +69,10 @@ public class webActivity extends Activity {
 	@Override
 	public boolean onKeyDown( int keyCode, KeyEvent event ) {
 		WebView webview = (WebView)findViewById(R.id.webView1);
-        if(keyCode == KeyEvent.KEYCODE_BACK && webview.canGoBack()) {
-            webview.goBack();
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
+        	if(keyCode == KeyEvent.KEYCODE_BACK && webview.canGoBack()) {
+        		webview.goBack();
+        		return true;
+        	}
+        	return super.onKeyDown(keyCode, event);
 	}
 }
