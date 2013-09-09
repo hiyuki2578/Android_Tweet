@@ -40,16 +40,10 @@
         android:orderInCategory="107"
         android:showAsAction="never"
         android:title="@string/wifi"/>
-    <item
-        android:id="@+id/menu_wifi_setting"
+        <item
+        android:id="@+id/menu_calc"
         android:orderInCategory="108"
         android:showAsAction="never"
-        android:title="@string/wifi_on_off">
-    <item
-        android:id="@+id/menu_speed"
-        android:orderInCategory="109"
-        android:showAsAction="never"
-        android:title="@string/speed"></item>
-    </item>
+        android:title="@string/calc"/>
     
 </menu>

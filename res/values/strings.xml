@@ -16,9 +16,10 @@
     <string name="unknown">取得できませんでした</string>
     <string name="gps">GPS情報の表示</string>
     <string name="wifi">wifiスキャン</string>
-    <string name="on_label">無線LANをOFFにする</string>
-    <string name="off_label">無線LANをONにする</string>
-    <string name="wifi_on_off">無線LANトグル</string>
-    <string name="speed">Speedtest.net</string>
+    <string name="label_description">10進数を2進数に変換表示</string>
+    <string name="label_integer">10進数：</string>
+    <string name="label_binary">2進数：</string>
+    <string name="button_convert">変換</string>
+    <string name="calc">10進から2進に変換</string>
     
 </resources>

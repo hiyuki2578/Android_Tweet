@@ -26,40 +26,41 @@ public final class R {
         public static final int ic_launcher=0x7f020002;
     }
     public static final class id {
-        public static final int Latitude=0x7f080001;
-        public static final int Longitude=0x7f080002;
-        public static final int Provider=0x7f080000;
-        public static final int action_start_oauth=0x7f080006;
-        public static final int action_tweet=0x7f080004;
-        public static final int fragment_container=0x7f080003;
-        public static final int icon=0x7f08000a;
-        public static final int input_text=0x7f080005;
-        public static final int menu_gps=0x7f080014;
-        public static final int menu_mail=0x7f080013;
-        public static final int menu_reload=0x7f08000e;
-        public static final int menu_reload1=0x7f080010;
-        public static final int menu_speed=0x7f080017;
-        public static final int menu_timeline=0x7f080018;
-        public static final int menu_timeline1=0x7f080019;
-        public static final int menu_tweet=0x7f08000f;
-        public static final int menu_tweet1=0x7f080011;
-        public static final int menu_web=0x7f080012;
-        public static final int menu_wifi=0x7f080015;
-        public static final int menu_wifi_setting=0x7f080016;
-        public static final int name=0x7f08000b;
-        public static final int progressBar2=0x7f080007;
-        public static final int screen_name=0x7f08000c;
-        public static final int text=0x7f08000d;
-        public static final int webView1=0x7f080008;
-        public static final int wifi=0x7f080009;
+        public static final int Latitude=0x7f080004;
+        public static final int Longitude=0x7f080005;
+        public static final int Provider=0x7f080003;
+        public static final int action_start_oauth=0x7f080009;
+        public static final int action_tweet=0x7f080007;
+        public static final int button_convert=0x7f080001;
+        public static final int fragment_container=0x7f080006;
+        public static final int icon=0x7f08000c;
+        public static final int input_text=0x7f080008;
+        public static final int label_result=0x7f080002;
+        public static final int menu_calc=0x7f080018;
+        public static final int menu_gps=0x7f080016;
+        public static final int menu_mail=0x7f080015;
+        public static final int menu_reload=0x7f080010;
+        public static final int menu_reload1=0x7f080012;
+        public static final int menu_timeline=0x7f080019;
+        public static final int menu_timeline1=0x7f08001a;
+        public static final int menu_tweet=0x7f080011;
+        public static final int menu_tweet1=0x7f080013;
+        public static final int menu_web=0x7f080014;
+        public static final int menu_wifi=0x7f080017;
+        public static final int name=0x7f08000d;
+        public static final int progressBar2=0x7f08000a;
+        public static final int screen_name=0x7f08000e;
+        public static final int text=0x7f08000f;
+        public static final int text_integer=0x7f080000;
+        public static final int webView1=0x7f08000b;
     }
     public static final class layout {
-        public static final int activity_gps=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_tweet=0x7f030002;
-        public static final int activity_twitter_oauth=0x7f030003;
-        public static final int activity_web=0x7f030004;
-        public static final int activity_wifi=0x7f030005;
+        public static final int activity_calculator=0x7f030000;
+        public static final int activity_gps=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_tweet=0x7f030003;
+        public static final int activity_twitter_oauth=0x7f030004;
+        public static final int activity_web=0x7f030005;
         public static final int list_item_tweet=0x7f030006;
     }
     public static final class menu {
@@ -69,16 +70,18 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f050000;
+        public static final int button_convert=0x7f050012;
+        public static final int calc=0x7f050013;
         public static final int gps=0x7f05000d;
         public static final int hello_world=0x7f050002;
+        public static final int label_binary=0x7f050011;
+        public static final int label_description=0x7f05000f;
+        public static final int label_integer=0x7f050010;
         public static final int menu_mail=0x7f05000b;
         public static final int menu_refresh=0x7f050009;
         public static final int menu_timeline=0x7f05000a;
         public static final int menu_tweet=0x7f050008;
         public static final int menu_web=0x7f050001;
-        public static final int off_label=0x7f050010;
-        public static final int on_label=0x7f05000f;
-        public static final int speed=0x7f050012;
         public static final int tweet=0x7f050007;
         public static final int twitter_callback_url=0x7f050006;
         public static final int twitter_consumer_key=0x7f050003;
@@ -86,7 +89,6 @@ public final class R {
         public static final int twitter_oauth=0x7f050005;
         public static final int unknown=0x7f05000c;
         public static final int wifi=0x7f05000e;
-        public static final int wifi_on_off=0x7f050011;
     }
     public static final class style {
         /** 
